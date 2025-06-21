@@ -1,0 +1,57 @@
+     Running benches/benchmark.rs (target/release/deps/benchmark-a87652de178b2a97)
+Gnuplot not found, using plotters backend
+Benchmarking SPSC/ArrayQueue_SPSC: Warming up for 3.0000 s
+Warning: Unable to complete 10 samples in 100.0s. You may wish to increase target time to 165.8s or enable flat sampling.
+SPSC/ArrayQueue_SPSC    time:   [3.0522 s 3.0551 s 3.0572 s]
+                        thrpt:  [32.710 Melem/s 32.732 Melem/s 32.763 Melem/s]
+Found 2 outliers among 10 measurements (20.00%)
+  1 (10.00%) low severe
+  1 (10.00%) high mild
+SPSC/BBQ_SPSC           time:   [9.1020 s 9.5764 s 10.084 s]
+                        thrpt:  [9.9166 Melem/s 10.442 Melem/s 10.987 Melem/s]
+
+Benchmarking MPSC/ArrayQueue_MPSC: Warming up for 3.0000 s
+Warning: Unable to complete 10 samples in 100.0s. You may wish to increase target time to 275.2s.
+MPSC/ArrayQueue_MPSC    time:   [27.016 s 27.269 s 27.512 s]
+                        thrpt:  [3.6347 Melem/s 3.6671 Melem/s 3.7016 Melem/s]
+Found 1 outliers among 10 measurements (10.00%)
+  1 (10.00%) low mild
+Benchmarking MPSC/BBQ_MPSC: Warming up for 3.0000 s
+Warning: Unable to complete 10 samples in 100.0s. You may wish to increase target time to 227.1s.
+MPSC/BBQ_MPSC           time:   [22.880 s 23.036 s 23.192 s]
+                        thrpt:  [4.3118 Melem/s 4.3410 Melem/s 4.3706 Melem/s]
+
+Benchmarking SPMC/ArrayQueue_SPMC: Warming up for 3.0000 s
+Warning: Unable to complete 10 samples in 100.0s. You may wish to increase target time to 359.1s.
+SPMC/ArrayQueue_SPMC    time:   [32.888 s 33.116 s 33.321 s]
+                        thrpt:  [3.0012 Melem/s 3.0197 Melem/s 3.0406 Melem/s]
+Found 1 outliers among 10 measurements (10.00%)
+  1 (10.00%) low mild
+Benchmarking SPMC/BBQ_SPMC: Warming up for 3.0000 s
+Warning: Unable to complete 10 samples in 100.0s. You may wish to increase target time to 176.4s.
+SPMC/BBQ_SPMC           time:   [17.223 s 17.389 s 17.600 s]
+                        thrpt:  [5.6819 Melem/s 5.7508 Melem/s 5.8063 Melem/s]
+Found 1 outliers among 10 measurements (10.00%)
+  1 (10.00%) high mild
+
+Benchmarking MPMC/ArrayQueue_MPMC: Warming up for 3.0000 s
+Warning: Unable to complete 10 samples in 100.0s. You may wish to increase target time to 642.9s.
+MPMC/ArrayQueue_MPMC    time:   [40.798 s 49.534 s 56.821 s]
+                        thrpt:  [1.7599 Melem/s 2.0188 Melem/s 2.4511 Melem/s]
+                 change:
+                        time:   [−4.1684% +16.355% +37.855%] (p = 0.16 > 0.05)
+                        thrpt:  [−27.460% −14.056% +4.3497%]
+                        No change in performance detected.
+Found 2 outliers among 10 measurements (20.00%)
+  2 (20.00%) low mild
+Benchmarking MPMC/BBQ_MPMC: Warming up for 3.0000 s
+Warning: Unable to complete 10 samples in 100.0s. You may wish to increase target time to 222.7s.
+MPMC/BBQ_MPMC           time:   [22.403 s 23.267 s 24.156 s]
+                        thrpt:  [4.1397 Melem/s 4.2979 Melem/s 4.4638 Melem/s]
+                 change:
+                        time:   [−0.4191% +4.4652% +9.1361%] (p = 0.10 > 0.05)
+                        thrpt:  [−8.3713% −4.2743% +0.4209%]
+                        No change in performance detected.
+Found 1 outliers among 10 measurements (10.00%)
+  1 (10.00%) high mild
+

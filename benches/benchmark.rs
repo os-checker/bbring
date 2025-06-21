@@ -361,10 +361,10 @@ fn bench_mpmc(c: &mut Criterion) {
 criterion_group! {
     name = benches;
     config = Criterion::default().sample_size(10).measurement_time(Duration::from_secs(100));
-    // targets = bench_spsc, bench_mpsc, bench_spmc, bench_mpmc
+    targets = bench_spsc, bench_mpsc, bench_spmc, bench_mpmc
     // targets = bench_spsc
     // targets = bench_mpsc
     // targets = bench_spmc
-    targets = bench_mpmc
+    // targets = bench_mpmc
 }
 criterion_main!(benches);
